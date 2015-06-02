@@ -10,10 +10,7 @@ var qrcode = require('qrcode-terminal');
 var participants = {};
 
 gpios.exportAll(function(){
-  exec(config.board.setup, function(err,stdout,stderr){
-    console.log(stdout);
-    startMuzzley();
-  });
+  startMuzzley();
 });
 
 function startMuzzley(){
